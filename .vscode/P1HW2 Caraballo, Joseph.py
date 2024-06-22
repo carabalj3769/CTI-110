@@ -3,7 +3,7 @@
 # P1HW2
 # Creating a Budget calculator program for traveling
 
-def travel_expenses():
+def travel_expenses(): 
     print("This program calculates and displays travel expenses")
     budget = float(input("Enter Budget: $"))
     destination = input("Enter your travel destination: ")
@@ -21,3 +21,4 @@ def travel_expenses():
     print(f"Accomodation: ${hotel_cost:.2f}")
     print(f"Food: ${food_cost:.2f}")
     print(f"Remaining Balance: ${remaining_balance:.2f}")
+travel_expenses()
