@@ -3,8 +3,8 @@
 # P1HW2
 # Creating a Budget calculator program for traveling
 
-def trave_expenses():
-    print("This program calculates and displays ytavel expenses")
+def travel_expenses():
+    print("This program calculates and displays travel expenses")
     budget = float(input("Enter Budget: $"))
     destination = input("Enter your travel destination: ")
     gas_cost = float(input("How much do you think you will spend on gas: $")) 
@@ -14,7 +14,7 @@ def trave_expenses():
     total_expenses = gas_cost + hotel_cost + food_cost
     remaining_balance = budget - total_expenses
 
-    print("------------Travel Expenses------------")
+    print("\n------------Travel Expenses------------")
     print(f"Location: {destination}")
     print(f"Initial Budget: ${budget:.2f}")
     print(f"Fuel: ${gas_cost:.2f}")
