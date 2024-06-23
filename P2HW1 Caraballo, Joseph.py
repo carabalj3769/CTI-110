@@ -14,11 +14,16 @@ def travel_expenses():
     total_expenses = gas_cost + hotel_cost + food_cost
     remaining_balance = budget - total_expenses
 
+    label_width = 20
+    value_width = 14
+
     print("\n------------Travel Expenses------------")
-    print(f"Location: {destination}")
-    print(f"Initial Budget: ${budget:.2f}")
-    print(f"Fuel: ${gas_cost:.2f}")
-    print(f"Accomodation: ${hotel_cost:.2f}")
-    print(f"Food: ${food_cost:.2f}")
-    print(f"Remaining Balance: ${remaining_balance:.2f}")
+    print(f"{'Location:':<{label_width}}{destination:>{value_width}}")
+    print(f"{'Initial Budget:':<{label_width}} ${budget:>{value_width - 8}.2f}")
+    print(f"{'Fuel:':<{label_width}} ${gas_cost:>{value_width - 8}.2f}")
+    print(f"{'Accomodation:':<{label_width}} ${hotel_cost:>{value_width - 8}.2f}")
+    print(f"{'Food:':<{label_width}} ${food_cost:>{value_width - 8}.2f}")
+    print("----------------------------------------")
+    print()
+    print(f"{'Remaining Balance:':<{label_width}} ${remaining_balance:>{value_width - 8}.2f}")
 travel_expenses()
